@@ -19,7 +19,7 @@
                 <th>ID</th>
                 <th>Name</th>
                 <th>Price</th>
-                <th>Actions</th>
+                <th></th>
             </tr>
         </thead>
         <tbody>
@@ -65,7 +65,7 @@
                     price.textContent = item.price;
                     row.appendChild(price);
 
-                    // Construct the row and add it to the tbody
+                    // Constructs the row and adds it to the tbody
                     const actions = document.createElement("td");
                     const deleteButton = document.createElement("button");
                     deleteButton.setAttribute("class", "deleteBTN");
@@ -98,7 +98,7 @@
         }
 
         // Add a new item
-        let current = 0; // current id number db
+        let current = 0; // current id number in the db
         document.getElementById("add-item-form").onsubmit = function(event) {
             event.preventDefault();
             
